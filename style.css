@@ -1,0 +1,126 @@
+.wrapper{
+    width: 400px;
+    height: 400px;
+    border: 2px solid rgb(63, 130, 186);
+    margin-left: 35%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.propeler{
+    width: 300px;
+    height: 300px;
+   
+
+}
+.propeler1{
+    width: 300px;
+    height: 300px;
+    animation-iteration-count: infinite;
+    animation-duration: 0.1s;
+    animation-name: test-anim1;
+}
+
+@keyframes test-anim1 {
+    0% { transform: rotate(0deg);;}
+    
+    100%  {transform: rotate(180deg);;}
+}
+
+.propeler2{
+    width: 300px;
+    height: 300px;
+    animation-iteration-count: infinite;
+    animation-duration: 0.05s;
+    animation-name: test-anim2;
+}
+
+@keyframes test-anim2 {
+    0% { transform: rotate(0deg);;}
+    
+    100%  {transform: rotate(360deg);;}
+}
+
+/* // clicled collor */
+
+.buttonwrapper{
+    display: flex;
+    margin-left: 45%;
+    margin-top: 30px;
+    
+}
+.fastbutton{
+    width: 50px;
+    height: 50px;
+    background-color: #bbbd8c; /* Default button color */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+    border-radius: 50%;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+  margin-left: 10px;
+    
+}
+.playbutton{
+    width: 50px;
+    height: 50px;
+    background-color: #4CAF50; /* Default button color */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.stopbutton{
+    width: 50px;
+    height: 50px;
+    background-color: #e02914; /* Default button color */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+    border-radius: 50%;
+
+}
+.activebutton{
+    background-color: rgb(243, 208, 11);
+}
+
+/* propeler bacground color */
+
+
+
+/* response --------------- */
+
+@media (max-width:850px){
+
+    .buttonwrapper{
+        margin-left: 52%;
+    }
+}
+
+@media (max-width:640px){
+
+    .wrapper{
+        width: 250px;
+        height: 250px;
+        margin-left: 10%;
+    }
+    .propeler{
+        width: 200px;
+        height: 200px;
+    }
+    .buttonwrapper{
+        margin-left: 20%;
+    }
+}
