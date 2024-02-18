@@ -1,8 +1,16 @@
+.conteiner{
+    max-width: 800px;
+    margin :0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 .wrapper{
     width: 400px;
     height: 400px;
     border: 2px solid rgb(63, 130, 186);
-    margin-left: 35%;
+    
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -47,7 +55,7 @@
 
 .buttonwrapper{
     display: flex;
-    margin-left: 45%;
+    
     margin-top: 30px;
     
 }
@@ -102,25 +110,14 @@
 
 /* response --------------- */
 
-@media (max-width:850px){
-
-    .buttonwrapper{
-        margin-left: 52%;
-    }
-}
-
 @media (max-width:640px){
-
     .wrapper{
         width: 250px;
         height: 250px;
-        margin-left: 10%;
+       
     }
     .propeler{
         width: 200px;
         height: 200px;
-    }
-    .buttonwrapper{
-        margin-left: 20%;
     }
 }
